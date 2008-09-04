@@ -1,6 +1,6 @@
 Name:		task-wm2003sync-common
 Version:	1.0
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 Summary:	Metapackage for Windows Mobile 2003 and earlier devices
 Group:		Communications
 License:	GPLv2+
@@ -28,6 +28,7 @@ Requires:	task-wm2003sync-common
 Requires:	libopensync-plugin-kdepim
 Requires:	kdepim-kitchensync
 Requires:	synce-trayicon
+Suggests:	synce-kio-rapip
 
 %description -n task-wm2003sync-kde
 This package is a meta-package for connecting with Windows Mobile 2003
@@ -36,7 +37,14 @@ up a basic connection to the device and packages that are useful for
 synchronizing with KDE applications.  At present it also suggests the
 synce-trayicon package, even though this is a GTK+-based application,
 as it is the only application currently capable of graphically
-configuring partnerships on these devices.
+configuring partnerships on these devices. It also depends on a
+package that will allow you to access the filesystem on your Windows
+Mobile device from KDE applications like Konqueror. This package is
+mainly intended for use with KDE 3, as synchronization with KDE 4's
+PIM applications is not yet possible. If you wish to use as much
+functionality as is currently available in KDE 4, install this package
+with urpmi's --no-suggests parameter, and then install the
+kde4-kio-rapip package.
 
 %package -n task-wm2003sync-gnome
 Summary:	GNOME metapackage for Windows Mobile 2003 and earlier
@@ -45,12 +53,15 @@ Requires:	task-wm2003sync-common
 Requires:	libopensync-plugin-evolution2
 Requires:	multisync-gui
 Requires:	synce-trayicon
+Suggests:	synce-gvfs
 
 %description -n task-wm2003sync-gnome
 This package is a meta-package for connecting with Windows Mobile 2003
 and earlier devices. It depends on all packages necessary for setting
 up a basic connection to the device and packages that are useful for
-synchronizing with GNOME applications.
+synchronizing with GNOME applications. It also depends on a package
+that will allow you to access the filesystem on your Windows Mobile
+device from any GVFS-compatible application (most GNOME applications).
 
 %files
 
