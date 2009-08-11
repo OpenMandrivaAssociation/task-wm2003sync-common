@@ -1,6 +1,6 @@
 Name:		task-wm2003sync-common
-Version:	1.0
-Release:	%{mkrel 2}
+Version:	1.1
+Release:	%mkrel 1
 Summary:	Metapackage for Windows Mobile 2003 and earlier devices
 Group:		Communications
 License:	GPLv2+
@@ -26,9 +26,9 @@ Summary:	KDE metapackage for Windows Mobile 2003 and earlier
 Group:		Communications
 Requires:	task-wm2003sync-common
 Requires:	libopensync-plugin-kdepim
-Requires:	kdepim-kitchensync
-Requires:	synce-trayicon
-Suggests:	synce-kio-rapip
+Requires:	synce-kpm
+#Requires:	synce-trayicon
+Suggests:	kde4-kio-rapip
 
 %description -n task-wm2003sync-kde
 This package is a meta-package for connecting with Windows Mobile 2003
