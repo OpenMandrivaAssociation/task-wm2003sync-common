@@ -69,3 +69,20 @@ device from any GVFS-compatible application (most GNOME applications).
 
 %files -n task-wm2003sync-gnome
 
+
+
+%changelog
+* Tue Aug 11 2009 Emmanuel Andry <eandry@mandriva.org> 1.1-1mdv2010.0
++ Revision: 415188
+- now KDE4 compliant
+
+* Thu Sep 04 2008 Adam Williamson <awilliamson@mandriva.org> 1.0-2mdv2009.0
++ Revision: 280251
+- explain KDE package is meant for KDE 3
+- depend on VFS access packages
+
+* Thu Jun 05 2008 Adam Williamson <awilliamson@mandriva.org> 1.0-1mdv2009.0
++ Revision: 215177
+- import task-wm2003sync-common
+
+
