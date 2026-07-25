@@ -1,6 +1,6 @@
 Name:		task-wm2003sync-common
 Version:	1.1
-Release:	%mkrel 1
+Release:	2
 Summary:	Metapackage for Windows Mobile 2003 and earlier devices
 Group:		Communications
 License:	GPLv2+
